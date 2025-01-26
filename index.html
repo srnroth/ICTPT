@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saron Niroth - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-content">
+        <div class="logo">SRN</div>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <img src="https://i.pinimg.com/736x/93/63/e7/9363e7d07abfb6de3a437972c0bae07f.jpg" alt="">
+      <div class="container">
+        <h1 class="animate-text">Hi, I'm Saron Niroth</h1>
+        <p class="subtitle animate-text">A student in CIA First High school
+        </p>
+        <div class="cta-buttons">
+          <button
+            class="primary-btn"
+            onclick="document.getElementById('portfolio').scrollIntoView({behavior: 'smooth'})"
+          >
+            View My Work
+          </button>
+          <button
+            class="secondary-btn"
+            onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a student in 10 Ariadne, and I dedicate my portfolio to my love of flowers. One of my dreams if money didn't matter was to be a florist, I find that flowers to be quite beautiful and interesting in a way specially, their different scents, their vibrant and unique colors, how each flower can represent different meanings and has different backgrounds.
+            </p>
+            <div class="skills">
+              <h3>Skills</h3>
+              <div class="skill-bars">
+                <div class="skill">
+                  <span>Sleeping</span>
+                  <div class="progress-bar">
+                    <div class="progress" data-percent="50"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>Never sleeping</span>
+                  <div class="progress-bar">
+                    <div class="progress" data-percent="50"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <span>Procrastinating</span>
+                  <div class="progress-bar">
+                    <div class="progress" data-percent="70"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <h2>Flowers</h2>
+        <p class="section-description">Beautiful flowers that has quite the captivating symbolism.</p>
+        <div class="flower-grid">
+          <!-- Flowers will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="primary-btn">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="icon-email"></i>
+              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d13342f3229351d38253c302d3138733e3230">[email&#160;protected]</a></p>
+            </div>
+            <div class="info-item">
+              <i class="icon-phone"></i>
+              <p>+855 98207789</p>
+            </div>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62541.05601536086!2d104.8457689512545!3d11.565044570349597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1737817779104!5m2!1sen!2skh"
+                width="100%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Saron Niroth. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
+
